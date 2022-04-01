@@ -22,11 +22,20 @@ font-family: "Amatic SC", sans-serif;}
       <div class="w3-top">
   <div class="w3-bar  w3-black w3-xlarge">
   <a href="home.php" class="w3-bar-item w3-button"><i>Accueil</i></a>
-		  <a href="#" class="w3-bar-item w3-button"><i>Circuits</i></a>
+		  <a href="#circuit" class="w3-bar-item w3-button"><i>Circuits</i></a>
 		  <a href="#about" class="w3-bar-item w3-button"><i>A Propos</i></a>
 		  <a href="#contact" class="w3-bar-item w3-button"><i>Contact</i></a>
+          <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" > <i  class="fa fa-user"></i> <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Inscription</a>
+      <a href="#" class="w3-bar-item w3-button">Connexion</a>
+      <a href="#" class="w3-bar-item w3-button">Reservation</a>
+      
+    </div>
+  </div>
 		  <div style="float: right!important;">
-			<a class="w3-bar-item "><i> AGENCE VOYAGE</i></a>
+      <a class="w3-bar-item "><i> AGENCE DE VOYAGE</i></a>
 		  </div>
   </div>
 		
@@ -40,13 +49,13 @@ font-family: "Amatic SC", sans-serif;}
   <h2><b>Voyagez à travers le monde<br>comme vous l'imaginez </b></h2>
 </div>
 </div>
-
+<div id="circuit">
 <div class="w3-row w3-container" style="margin:50px 0">
 <div class="w3-third w3-container">
   <div class="w3-topbar w3-border-amber">
     <img src="../Public/images/archipel.jpg" style="width:100%" class="img">
     <h2>Voyage sur l'achipel nippon</h2>
-    <a href=""><p>PLUS DE DETAILS</p></a>
+    <a href="../View/archipel.php"><p>PLUS DE DETAILS</p></a>
   </div>
 </div>
 
@@ -54,7 +63,7 @@ font-family: "Amatic SC", sans-serif;}
   <div class="w3-topbar w3-border-amber">
     <img src="../Public/images/grece.jpg" style="width:100%" class="img">
     <h2>Visite historique en Grèce</h2>
-    <a href=""><p>PLUS DE DETAILS</p></a>
+    <a href="../View/grece.php"><p>PLUS DE DETAILS</p></a>
   </div>
 </div>
 
@@ -62,10 +71,10 @@ font-family: "Amatic SC", sans-serif;}
   <div class="w3-topbar w3-border-amber">
     <img src="../Public/images/caribou.jpg" style="width:100%"  class="img">
     <h2>Voyage au pays des caribous</h2>
-    <a href=""><p>PLUS DE DETAILS</p></a>
+    <a href="../View/caribou.php"><p>PLUS DE DETAILS</p></a>
   </div>
 </div>
-</div>
+</div></div>
 
 
 
@@ -81,14 +90,14 @@ font-family: "Amatic SC", sans-serif;}
         <h3>GALLERIES</h3>
         <ul class="w3-ul">
           <li class="w3-padding-16 w3-hover-black">
-            <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Lorem</span><br>
-            <span>Sed mattis nunc</span>
+            <img src="../Public/images/cameroun.webp" class="w3-left w3-margin-right" style="width:100px">
+            <span class="w3-xlarge">A la decouverte</span><br>
+            <span>du Cameroun</span>
           </li>
           <li class="w3-padding-16 w3-hover-black">
-            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Ipsum</span><br>
-            <span>Praes tinci sed</span>
+            <img src="../Public/images/dubai.jpg" class="w3-left w3-margin-right" style="width:100px; height:60px">
+            <span class="w3-xlarge">A la decouverte</span><br>
+            <span>de Dubai</span>
           </li> 
         </ul>
       </div>
@@ -97,10 +106,10 @@ font-family: "Amatic SC", sans-serif;}
         <h3>PAYS POPULAIRES</h3>
         <p>
           <span class="w3-tag w3-black w3-margin-bottom">DESTINATION</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Assanie</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Kribi</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Berlin</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Caraibes</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Quebec</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Milan</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Nepal</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Paris</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Marseille</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Limbe</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bruxelles</span>
         </p>
       </div>
       <div class="w3-third">
