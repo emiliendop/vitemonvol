@@ -2,8 +2,28 @@
     require_once('connexion_bd.php');
 
     class ville{
-        public function __construct($n,$h)
-        {
+        public function __construct(){
+        }
+        public function getnom($i){
+            global $connexion;
+            $requet="SELECT `nom` FROM `ville` WHERE `id`=".$i."";
+            $result= $connexion->query($requet);
+            while($a=$result->fetch_array(MYSQLI_ASSOC)){
+                $t=$a['nom'];
+            }
+            return $t;
+        }
+        public function gethotel($i){
+            global $connexion;
+            $requet="SELECT `hotel` FROM `ville` WHERE `id`=".$i."";
+            $result= $connexion->query($requet);
+            $i=0;
+            while($a=$result->fetch_array(MYSQLI_ASSOC)){
+                $t=$a['hotel'];
+            }
+            return $t;
+        }
+        public function ajout($n,$h){
             global $connexion;
 
             $requet="INSERT INTO `ville`(`nom`,`hotel`)
@@ -13,6 +33,8 @@
         }
         public function supprime_ville($i){
             global $connexion;
+            $orange=new deplacement();
+            $orange->supprime_deplacement($i);
             $requet="DELETE FROM `ville` WHERE `id`='".$i."'";;
             $result=$connexion->query($requet);
             $result->close();

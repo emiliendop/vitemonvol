@@ -6,41 +6,72 @@
     class circuit{
         public function __construct(){
         }
-        public function get_nom($i){
+        public function get_nom($i)
+        {
             global $connexion;
             $requet="SELECT`nom` FROM `circuit`Where `id`=".$i."";
             $result= $connexion->query($requet);
-            return $result;
+            while($a=$result->fetch_array(MYSQLI_ASSOC)){
+                $t=$a['nom'];
+            }
+            return $t;
         }
         public function get_description($i){
             global $connexion;
             $requet="SELECT`description` FROM `circuit`Where `id`=".$i."";
             $result= $connexion->query($requet);
-            return $result;
+            while($a=$result->fetch_array(MYSQLI_ASSOC)){
+                $t=$a['description'];
+            }
+            return $t;
         }
         public function get_nombre_place_total($i){
             global $connexion;
             $requet="SELECT`nombre_place_total` FROM `circuit`Where `id`=".$i."";
             $result= $connexion->query($requet);
-            return $result;
+            while($a=$result->fetch_array(MYSQLI_ASSOC)){
+                $t=$a['nombre_place_total'];
+            }
+            return $t;
         }
         public function get_date_debut($i){
             global $connexion;
             $requet="SELECT`date_debut` FROM `circuit`Where `id`=".$i."";
             $result= $connexion->query($requet);
-            return $result;
+            while($a=$result->fetch_array(MYSQLI_ASSOC)){
+                $t=$a['date_debut'];
+            }
+            return $t;
         }
         public function get_date_fin($i){
             global $connexion;
             $requet="SELECT`date_fin` FROM `circuit`Where `id`=".$i."";
             $result= $connexion->query($requet);
-            return $result;
+            while($a=$result->fetch_array(MYSQLI_ASSOC)){
+                $t=$a['date_fin'];
+            }
+            return $t;
         }
         public function get_prix($i){
             global $connexion;
             $requet="SELECT`prix` FROM `circuit`Where `id`=".$i."";
             $result= $connexion->query($requet);
-            return $result;
+            
+            while($a=$result->fetch_array(MYSQLI_ASSOC)){
+                $t=$a['prix'];
+            }
+            return $t;
+        }
+        public function n(){
+            global $connexion;
+            $requet="SELECT * FROM `circuit`";
+            $result= $connexion->query($requet);
+            $i=0;
+            while($a=$result->fetch_array(MYSQLI_ASSOC)){
+                $t[$i]=$a['id'];
+                $i++;
+            }
+            return $i;
         }
         public function ajout_circuit($n,$d,$dd,$nbr,$df,$p)//ajouter un circuit
         { 

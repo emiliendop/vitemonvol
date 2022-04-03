@@ -1,6 +1,6 @@
 <?php
     require_once('connexion_bd.php');
-    require_once('circuit-deplacement.class');
+    require_once('circuit-deplacement.class.php');
 
     class deplacement{
         public function __construct(){
@@ -29,12 +29,10 @@
         }
         public function getplaning($id){
             global $connexion;
-            $requet="SELECT `planing_jour` FROM `deplacement` WHERE `id`=".$id."";
+            $requet="SELECT `planning_jour` FROM `deplacement` WHERE `id`=".$id."";
             $result= $connexion->query($requet);
-            $i=0;
             while($a=$result->fetch_array(MYSQLI_ASSOC)){
-                $t[$i]=$a['planing_jour'];
-                $i++;
+                $t=$a['planning_jour'];
             }
             return $t;
         }
@@ -42,10 +40,8 @@
             global $connexion;
             $requet="SELECT `heure_depart` FROM `deplacement` WHERE `id`=".$id."";
             $result= $connexion->query($requet);
-            $i=0;
             while($a=$result->fetch_array(MYSQLI_ASSOC)){
-                $t[$i]=$a['heure_depart'];
-                $i++;
+                $t=$a['heure_depart'];
             }
             return $t;
         }
@@ -53,13 +49,30 @@
             global $connexion;
             $requet="SELECT `heure_arrivee` FROM `deplacement` WHERE `id`=".$id."";
             $result= $connexion->query($requet);
-            $i=0;
             while($a=$result->fetch_array(MYSQLI_ASSOC)){
-                $t[$i]=$a['heure_arrivee'];
-                $i++;
+                $t=$a['heure_arrivee'];
             }
             return $t;
         }
+        public function getidville_depart($id){
+            global $connexion;
+            $requet="SELECT `id_ville_depart` FROM `deplacement` WHERE `id`=".$id."";
+            $result= $connexion->query($requet);
+            while($a=$result->fetch_array(MYSQLI_ASSOC)){
+                $t=$a['id_ville_depart'];
+            }
+            return $t;
+        }
+        public function getidville_arrivee($id){
+            global $connexion;
+            $requet="SELECT `id_ville_arrivee` FROM `deplacement` WHERE `id`=".$id."";
+            $result= $connexion->query($requet);
+            while($a=$result->fetch_array(MYSQLI_ASSOC)){
+                $t=$a['id_ville_arrivee'];
+            }
+            return $t;
+        }
+
         public function ajouter_deplacement($p,$hd,$ha,$ivd,$iva)
         {
             global $connexion;
