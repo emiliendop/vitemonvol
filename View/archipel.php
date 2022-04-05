@@ -34,8 +34,9 @@ font-size:25px;}
       <div class="w3-dropdown-hover w3-hide-small">
 <button class="w3-button" > <i  class="fa fa-user"></i> <i class="fa fa-caret-down"></i></button>     
 <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-  <a href="#" class="w3-bar-item w3-button">Inscription</a>
-  <a href="#" class="w3-bar-item w3-button">Connexion</a>
+<a href="login.php" class="w3-bar-item w3-button">Connexion</a>
+  <a href="register.php" class="w3-bar-item w3-button">Inscription</a>
+  
   <a href="#" class="w3-bar-item w3-button">Reservation</a>
   
 </div>
@@ -158,5 +159,51 @@ font-size:25px;}
     </div>
   </div>
 </div>
+<footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      
+    
+      <div class="w3-third">
+        <h3>GALLERIES</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="../Public/images/cameroun.webp" class="w3-left w3-margin-right" style="width:100px">
+            <span class="w3-xlarge">A la decouverte</span><br>
+            <span>du Cameroun</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="../Public/images/dubai.jpg" class="w3-left w3-margin-right" style="width:100px; height:60px">
+            <span class="w3-xlarge">A la decouverte</span><br>
+            <span>de Dubai</span>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>PAYS POPULAIRES</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">DESTINATION</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Assanie</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Kribi</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Berlin</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Caraibes</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Quebec</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Milan</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Nepal</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Paris</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Marseille</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Limbe</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bruxelles</span>
+        </p>
+      </div>
+      <div class="w3-third">
+      <a href="home.php" class="w3-button w3-light-grey w3-xlarge w3-center"><i class="fa fa-arrow-up w3-margin-right"></i>revenir en haut</a>
+  <br>
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity w3-margin-right"></i>
+    <i class="fa fa-instagram w3-hover-opacity w3-margin-right"></i>
+    <i class="fa fa-snapchat w3-hover-opacity w3-margin-right"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity w3-margin-right"></i>
+    <i class="fa fa-twitter w3-hover-opacity w3-margin-right"></i>
+    <i class="fa fa-linkedin w3-hover-opacity w3-margin-right"></i></div>
+    <div class="posfooter">
+    Copyright@<a href="#" target="_blank">2022</a>
+  </div>
+        </div>
+    </div>
+  </footer>
 </body>
 </html>
